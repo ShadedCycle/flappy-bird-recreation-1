@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System;
 using System.IO.Pipes;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,9 +11,13 @@ public class JumpBehaviour : MonoBehaviour
     public Rigidbody2D rb;
     public float jumpforce = 20f;
     public int startingjumps = 10;
+    public int additionaljumps = 8;
     public AudioSource jumpsfx, deathsfx, nojumpssfx;
     public GameManager gamemanager;
     [HideInInspector] public int jumps;
+    public string deathtag = "DeathObject";
+    public string collecttag = "CollectibleObject";
+    private GameObject collectibletriggered;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,7 +48,16 @@ public class JumpBehaviour : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        deathsfx.PlayOneShot(deathsfx.clip);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (other.CompareTag(deathtag))
+        {
+            deathsfx.PlayOneShot(deathsfx.clip);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (other.CompareTag(collecttag))
+        {
+            jumps += additionaljumps;
+            collectibletriggered = other.GetComponent<GameObject>();
+            GameObject.Destroy(collectibletriggered);
+        }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3941281286067032446}
   m_Layer: 0
   m_Name: LowerPipeTube
-  m_TagString: Untagged
+  m_TagString: DeathObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -987700755418442664, guid: 382c5e20df3b2f04791ec0bda09733de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 4501781900711063448}
   m_Layer: 0
   m_Name: Pipes
-  m_TagString: Untagged
+  m_TagString: DeathObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 4776470939963087717}
   m_Layer: 0
   m_Name: UpperPipeTube
-  m_TagString: Untagged
+  m_TagString: DeathObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -987700755418442664, guid: 382c5e20df3b2f04791ec0bda09733de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 193390710686461590}
   m_Layer: 0
   m_Name: LowerPipeTop
-  m_TagString: Untagged
+  m_TagString: DeathObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,7 +408,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 11
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3074129907952732773, guid: a168252ae46e1c84ca8647e2652642d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 6022436239665725269}
   m_Layer: 0
   m_Name: UpperPipeTop
-  m_TagString: Untagged
+  m_TagString: DeathObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,7 +500,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 11
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3074129907952732773, guid: a168252ae46e1c84ca8647e2652642d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
